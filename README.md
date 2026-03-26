@@ -1,16 +1,56 @@
-# React + Vite
+# 🎮 Pokédex (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive Pokédex application built with React that allows users to search for Pokémon and view detailed information about them.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Search by Name or ID** — Find any Pokémon using its name or national Pokédex ID
+- **Detailed Information** — View comprehensive Pokémon stats including:
+  - Official artwork image
+  - Height and weight
+  - Base experience points
+  - Abilities
+  - Full stat breakdown (HP, Attack, Defense, Sp. Atk, Sp. Def, Speed)
+- **Type-Based Color Coding** — Each Pokémon is color-coded based on its primary type
+- **Visual Stat Bars** — Stats are displayed with proportional bar graphs
+- **Error Handling** — User-friendly error messages when Pokémon are not found
+- **Keyboard Support** — Press Enter to search, or click the search button
 
-## React Compiler
+## How It Works
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Enter a Pokémon name (e.g., "pikachu") or ID number (e.g., "25") in the search box
+2. Click **Buscar** or press **Enter**
+3. The app fetches data from the PokeAPI and displays a detailed card with:
+   - Pokémon image and ID
+   - Type badges with corresponding colors
+   - Physical measurements (height/weight)
+   - Base experience value
+   - All abilities
+   - Complete stat breakdown with visual bars
 
-## Expanding the ESLint configuration
+## Type Colors
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Each Pokémon type has a distinct color, displayed as badges on the Pokémon card.
+
+## Technologies Used
+
+- **React** — Component-based UI framework
+- **Vite** — Fast build tool and dev server
+- **CSS** — Responsive design with styled stat bars
+- **JavaScript (ES6+)** — API integration and event handling
+
+## API
+
+- **PokeAPI** — `https://pokeapi.co/api/v2/pokemon/{name or id}`
+
+## Error Handling
+
+If a Pokémon is not found, the app displays a helpful error message.
+
+## Setup - React + Vite
+
+This project is built with React and Vite. For more information about the setup, see the [Vite React documentation](https://vitejs.dev/).
+
+---
+
+**Search your favorite Pokémon and explore their stats! 🔍📊**
